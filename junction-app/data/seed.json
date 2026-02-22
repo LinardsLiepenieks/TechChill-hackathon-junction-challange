@@ -1,0 +1,102 @@
+[
+  {
+    "id": "seed-1",
+    "projectName": "EcoTrack",
+    "description": "AI-powered carbon footprint tracker for daily commuters.",
+    "teamName": "Green Bytes",
+    "teamMembers": ["Alice Johnson", "Bob Smith", "Carol Wu"],
+    "score": null,
+    "demoUrl": "https://example.com/ecotrack",
+    "seed": true
+  },
+  {
+    "id": "seed-2",
+    "projectName": "MedAssist",
+    "description": "Real-time symptom checker using large language models.",
+    "teamName": "HealthHackers",
+    "teamMembers": ["David Lee", "Emma Garcia", "Frank Chen", "Grace Kim"],
+    "score": null,
+    "demoUrl": "https://example.com/medassist",
+    "seed": true
+  },
+  {
+    "id": "seed-3",
+    "projectName": "FinLit",
+    "description": "Gamified financial literacy app for teenagers.",
+    "teamName": "MoneyMinds",
+    "teamMembers": ["Hannah Brown", "Ivan Petrov"],
+    "score": null,
+    "demoUrl": "https://example.com/finlit",
+    "seed": true
+  },
+  {
+    "id": "seed-4",
+    "projectName": "LearnFlow",
+    "description": "Adaptive learning platform that adjusts to student pace.",
+    "teamName": "EduVision",
+    "teamMembers": ["Julia Adams", "Kevin Park", "Laura Nguyen"],
+    "score": null,
+    "demoUrl": "https://example.com/learnflow",
+    "seed": true
+  },
+  {
+    "id": "seed-5",
+    "projectName": "WasteWise",
+    "description": "Computer vision system for smart recycling bin sorting.",
+    "teamName": "CircularTech",
+    "teamMembers": ["Mike O'Brien", "Nina Sato", "Oscar Rivera"],
+    "score": null,
+    "demoUrl": "https://example.com/wastewise",
+    "seed": true
+  },
+  {
+    "id": "seed-6",
+    "projectName": "FraudGuard",
+    "description": "ML-based transaction anomaly detection for small businesses.",
+    "teamName": "SecurePay",
+    "teamMembers": ["Priya Sharma", "Quinn Taylor"],
+    "score": null,
+    "demoUrl": "https://example.com/fraudguard",
+    "seed": true
+  },
+  {
+    "id": "seed-7",
+    "projectName": "CodeBuddy",
+    "description": "AI pair programming assistant for beginner developers.",
+    "teamName": "DevStarters",
+    "teamMembers": ["Rachel Kim", "Sam Wilson", "Tina Zhang", "Uma Patel"],
+    "score": null,
+    "demoUrl": "https://example.com/codebuddy",
+    "seed": true
+  },
+  {
+    "id": "seed-8",
+    "projectName": "PulseCheck",
+    "description": "Wearable data aggregator for preventive health insights.",
+    "teamName": "VitalSigns",
+    "teamMembers": ["Victor Lund", "Wendy Ma", "Xander Johansson"],
+    "score": null,
+    "demoUrl": "https://example.com/pulsecheck",
+    "seed": true
+  },
+  {
+    "id": "seed-9",
+    "projectName": "SkillBridge",
+    "description": "Peer-to-peer micro-tutoring marketplace for university students.",
+    "teamName": "LearnTogether",
+    "teamMembers": ["Yuki Tanaka", "Zara Ahmed"],
+    "score": null,
+    "demoUrl": "https://example.com/skillbridge",
+    "seed": true
+  },
+  {
+    "id": "seed-10",
+    "projectName": "SentientSearch",
+    "description": "Context-aware enterprise search engine using RAG architecture.",
+    "teamName": "DeepQuery",
+    "teamMembers": ["Aaron Foster", "Bianca Rossi", "Carlos Mendez"],
+    "score": null,
+    "demoUrl": "https://example.com/sentientsearch",
+    "seed": true
+  }
+]

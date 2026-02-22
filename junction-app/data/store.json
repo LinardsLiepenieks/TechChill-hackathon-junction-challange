@@ -1,0 +1,304 @@
+{
+  "participants": [
+    {
+      "id": "seed-1",
+      "projectName": "EcoTrack",
+      "description": "AI-powered carbon footprint tracker for daily commuters.",
+      "teamName": "Green Bytes",
+      "teamMembers": [
+        "Alice Johnson",
+        "Bob Smith",
+        "Carol Wu"
+      ],
+      "score": null,
+      "demoUrl": "https://example.com/ecotrack",
+      "seed": true
+    },
+    {
+      "id": "seed-2",
+      "projectName": "MedAssist",
+      "description": "Real-time symptom checker using large language models.",
+      "teamName": "HealthHackers",
+      "teamMembers": [
+        "David Lee",
+        "Emma Garcia",
+        "Frank Chen",
+        "Grace Kim"
+      ],
+      "score": null,
+      "demoUrl": "https://example.com/medassist",
+      "seed": true
+    },
+    {
+      "id": "seed-3",
+      "projectName": "FinLit",
+      "description": "Gamified financial literacy app for teenagers.",
+      "teamName": "MoneyMinds",
+      "teamMembers": [
+        "Hannah Brown",
+        "Ivan Petrov"
+      ],
+      "score": null,
+      "demoUrl": "https://example.com/finlit",
+      "seed": true
+    },
+    {
+      "id": "seed-4",
+      "projectName": "LearnFlow",
+      "description": "Adaptive learning platform that adjusts to student pace.",
+      "teamName": "EduVision",
+      "teamMembers": [
+        "Julia Adams",
+        "Kevin Park",
+        "Laura Nguyen"
+      ],
+      "score": null,
+      "demoUrl": "https://example.com/learnflow",
+      "seed": true
+    },
+    {
+      "id": "seed-5",
+      "projectName": "WasteWise",
+      "description": "Computer vision system for smart recycling bin sorting.",
+      "teamName": "CircularTech",
+      "teamMembers": [
+        "Mike O'Brien",
+        "Nina Sato",
+        "Oscar Rivera"
+      ],
+      "score": null,
+      "demoUrl": "https://example.com/wastewise",
+      "seed": true
+    },
+    {
+      "id": "seed-6",
+      "projectName": "FraudGuard",
+      "description": "ML-based transaction anomaly detection for small businesses.",
+      "teamName": "SecurePay",
+      "teamMembers": [
+        "Priya Sharma",
+        "Quinn Taylor"
+      ],
+      "score": null,
+      "demoUrl": "https://example.com/fraudguard",
+      "seed": true
+    },
+    {
+      "id": "seed-7",
+      "projectName": "CodeBuddy",
+      "description": "AI pair programming assistant for beginner developers.",
+      "teamName": "DevStarters",
+      "teamMembers": [
+        "Rachel Kim",
+        "Sam Wilson",
+        "Tina Zhang",
+        "Uma Patel"
+      ],
+      "score": null,
+      "demoUrl": "https://example.com/codebuddy",
+      "seed": true
+    },
+    {
+      "id": "seed-8",
+      "projectName": "PulseCheck",
+      "description": "Wearable data aggregator for preventive health insights.",
+      "teamName": "VitalSigns",
+      "teamMembers": [
+        "Victor Lund",
+        "Wendy Ma",
+        "Xander Johansson"
+      ],
+      "score": null,
+      "demoUrl": "https://example.com/pulsecheck",
+      "seed": true
+    },
+    {
+      "id": "seed-9",
+      "projectName": "SkillBridge",
+      "description": "Peer-to-peer micro-tutoring marketplace for university students.",
+      "teamName": "LearnTogether",
+      "teamMembers": [
+        "Yuki Tanaka",
+        "Zara Ahmed"
+      ],
+      "score": null,
+      "demoUrl": "https://example.com/skillbridge",
+      "seed": true
+    },
+    {
+      "id": "seed-10",
+      "projectName": "SentientSearch",
+      "description": "Context-aware enterprise search engine using RAG architecture.",
+      "teamName": "DeepQuery",
+      "teamMembers": [
+        "Aaron Foster",
+        "Bianca Rossi",
+        "Carlos Mendez"
+      ],
+      "score": null,
+      "demoUrl": "https://example.com/sentientsearch",
+      "seed": true
+    },
+    {
+      "projectName": "test",
+      "description": "12323",
+      "teamName": "test",
+      "teamMembers": [
+        "sdfsdf"
+      ],
+      "demoUrl": "https://example.com",
+      "id": "team-1771718792039",
+      "score": null
+    }
+  ],
+  "votes": [
+    {
+      "winnerId": "team-1771718792039",
+      "loserId": "seed-1",
+      "timestamp": 1771719059167
+    },
+    {
+      "winnerId": "seed-3",
+      "loserId": "seed-2",
+      "timestamp": 1771719060455
+    },
+    {
+      "winnerId": "seed-4",
+      "loserId": "seed-5",
+      "timestamp": 1771719061493
+    },
+    {
+      "winnerId": "seed-7",
+      "loserId": "seed-6",
+      "timestamp": 1771719064616
+    },
+    {
+      "winnerId": "seed-8",
+      "loserId": "seed-9",
+      "timestamp": 1771719067771
+    },
+    {
+      "winnerId": "seed-2",
+      "loserId": "team-1771718792039",
+      "timestamp": 1771719069582
+    },
+    {
+      "winnerId": "seed-1",
+      "loserId": "seed-3",
+      "timestamp": 1771719071125
+    },
+    {
+      "winnerId": "seed-6",
+      "loserId": "seed-4",
+      "timestamp": 1771719072970
+    },
+    {
+      "winnerId": "seed-5",
+      "loserId": "seed-7",
+      "timestamp": 1771719074249
+    },
+    {
+      "winnerId": "seed-8",
+      "loserId": "team-1771718792039",
+      "timestamp": 1771719075941
+    },
+    {
+      "winnerId": "seed-1",
+      "loserId": "seed-9",
+      "timestamp": 1771719077252
+    },
+    {
+      "winnerId": "seed-4",
+      "loserId": "seed-2",
+      "timestamp": 1771719078761
+    },
+    {
+      "winnerId": "seed-3",
+      "loserId": "seed-5",
+      "timestamp": 1771719079749
+    },
+    {
+      "winnerId": "seed-8",
+      "loserId": "seed-6",
+      "timestamp": 1771719081602
+    },
+    {
+      "winnerId": "seed-7",
+      "loserId": "seed-9",
+      "timestamp": 1771719083081
+    }
+  ],
+  "feedback": {
+    "team-1771718792039": {
+      "strengths": [
+        "Public demo URL",
+        "Team listed clearly"
+      ],
+      "weaknesses": [
+        "Placeholder description",
+        "No tech details",
+        "Missing challenge alignment"
+      ]
+    },
+    "seed-1": {
+      "strengths": [
+        "AI personalization and gamification",
+        "Modular architecture with SQLite",
+        "Real datasets for emissions forecasting"
+      ],
+      "weaknesses": [
+        "Common carbon tracker concept",
+        "Rough emission estimates",
+        "Privacy concerns with data"
+      ]
+    },
+    "seed-7": {
+      "strengths": [
+        "Beginner-friendly AI assistant",
+        "Public demo available",
+        "Targets developer productivity"
+      ],
+      "weaknesses": [
+        "Ignores sustainability challenge",
+        "Lacks originality",
+        "Misses real datasets"
+      ]
+    },
+    "seed-6": {
+      "strengths": [
+        "Strong ML anomaly detection",
+        "Real-time fraud prevention",
+        "High technical execution"
+      ],
+      "weaknesses": [
+        "Off-topic from sustainability",
+        "Unclear demo details",
+        "Limited challenge relevance"
+      ]
+    },
+    "seed-9": {
+      "strengths": [
+        "Real student problem solved",
+        "Peer tutoring potential",
+        "Working demo provided"
+      ],
+      "weaknesses": [
+        "Off-topic challenge",
+        "No AI/ML component",
+        "Low innovation originality"
+      ]
+    },
+    "seed-8": {
+      "strengths": [
+        "Strong market growth potential",
+        "Proven preventive health demand",
+        "Timely wearable tech trends"
+      ],
+      "weaknesses": [
+        "Off-topic from urban sustainability",
+        "No environmental relevance",
+        "Missing AI/ML requirement"
+      ]
+    }
+  }
+}
