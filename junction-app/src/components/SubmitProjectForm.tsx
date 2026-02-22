@@ -18,6 +18,7 @@ export function SubmitProjectForm({ onSubmitted }: SubmitProjectFormProps) {
   const [members, setMembers] = useState<string[]>([]);
   const [memberInput, setMemberInput] = useState("");
   const [demoUrl, setDemoUrl] = useState("");
+  const [presentationUrl, setPresentationUrl] = useState("");
 
   const canSubmit = projectName.trim() && description.trim() && teamName.trim() && members.length > 0;
 
@@ -49,6 +50,7 @@ export function SubmitProjectForm({ onSubmitted }: SubmitProjectFormProps) {
       teamName: teamName.trim(),
       teamMembers: members,
       demoUrl: demoUrl.trim() || "https://example.com",
+      ...(presentationUrl.trim() ? { presentationUrl: presentationUrl.trim() } : {}),
     });
 
     setProjectName("");
@@ -57,6 +59,7 @@ export function SubmitProjectForm({ onSubmitted }: SubmitProjectFormProps) {
     setMembers([]);
     setMemberInput("");
     setDemoUrl("");
+    setPresentationUrl("");
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 3000);
     onSubmitted?.();
@@ -147,15 +150,27 @@ export function SubmitProjectForm({ onSubmitted }: SubmitProjectFormProps) {
         )}
       </div>
 
-      <div>
-        <label className="block text-xs font-medium text-muted mb-1">Demo URL</label>
-        <input
-          type="url"
-          value={demoUrl}
-          onChange={(e) => setDemoUrl(e.target.value)}
-          placeholder="https://your-demo.com"
-          className={inputClass}
-        />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label className="block text-xs font-medium text-muted mb-1">Demo URL</label>
+          <input
+            type="url"
+            value={demoUrl}
+            onChange={(e) => setDemoUrl(e.target.value)}
+            placeholder="https://your-demo.com"
+            className={inputClass}
+          />
+        </div>
+        <div>
+          <label className="block text-xs font-medium text-muted mb-1">Presentation (Google Drive link)</label>
+          <input
+            type="url"
+            value={presentationUrl}
+            onChange={(e) => setPresentationUrl(e.target.value)}
+            placeholder="https://drive.google.com/file/d/..."
+            className={inputClass}
+          />
+        </div>
       </div>
 
       <div className="flex items-center gap-3 pt-1">

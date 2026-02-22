@@ -22,7 +22,7 @@ PROJECT:
 - Name: ${p.projectName}
 - Team: ${p.teamName} (${p.teamMembers.join(", ")})
 - Description: ${p.description}
-- Demo: ${p.demoUrl}
+- Demo: ${p.demoUrl}${p.presentationUrl ? `\n- Presentation: ${p.presentationUrl}\n\nIMPORTANT: Visit the presentation URL above, read the PDF content, and use it as primary context for your analysis.` : ""}
 
 JUDGING CRITERIA (Project Guidelines):
 ${organizerRulebook.content}

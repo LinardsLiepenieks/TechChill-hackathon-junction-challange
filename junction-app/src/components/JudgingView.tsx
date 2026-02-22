@@ -6,6 +6,7 @@ import { ProjectCard, CardState } from "@/components/ProjectCard";
 import { ChatPanel } from "@/components/ChatPanel";
 import { CompareDrawer } from "@/components/CompareDrawer";
 import { Button } from "@/components/ui/Button";
+import { PresentationModal } from "@/components/PresentationModal";
 import { ChatMessage } from "@/types";
 
 type AnimPhase = "idle" | "selected" | "exiting";
@@ -18,6 +19,7 @@ export function JudgingView() {
   const timerRef = useRef<ReturnType<typeof setTimeout>>(undefined);
   const chatMessagesRefA = useRef<ChatMessage[]>([]);
   const chatMessagesRefB = useRef<ChatMessage[]>([]);
+  const [presentationTarget, setPresentationTarget] = useState<"A" | "B" | null>(null);
 
   const summarizeProject = useCallback(
     async (projectId: string, projectName: string, messagesRef: React.MutableRefObject<ChatMessage[]>) => {
@@ -110,19 +112,56 @@ export function JudgingView() {
 
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 shrink-0">
-          <ProjectCard
-            participant={projectA}
-            onClick={() => handleVote(projectA.id)}
-            state={cardState(projectA.id)}
-            disabled={phase !== "idle"}
-          />
-          <ProjectCard
-            participant={projectB}
-            onClick={() => handleVote(projectB.id)}
-            state={cardState(projectB.id)}
-            disabled={phase !== "idle"}
-          />
+          <div>
+            <ProjectCard
+              participant={projectA}
+              onClick={() => handleVote(projectA.id)}
+              state={cardState(projectA.id)}
+              disabled={phase !== "idle"}
+            />
+            {projectA.presentationUrl && (
+              <button
+                type="button"
+                onClick={() => setPresentationTarget("A")}
+                className="mt-1.5 text-xs text-accent/70 hover:text-accent transition-colors cursor-pointer flex items-center gap-1"
+              >
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                </svg>
+                Presentation Evaluation
+              </button>
+            )}
+          </div>
+          <div>
+            <ProjectCard
+              participant={projectB}
+              onClick={() => handleVote(projectB.id)}
+              state={cardState(projectB.id)}
+              disabled={phase !== "idle"}
+            />
+            {projectB.presentationUrl && (
+              <button
+                type="button"
+                onClick={() => setPresentationTarget("B")}
+                className="mt-1.5 text-xs text-accent/70 hover:text-accent transition-colors cursor-pointer flex items-center gap-1"
+              >
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                </svg>
+                Presentation Evaluation
+              </button>
+            )}
+          </div>
         </div>
+
+        {/* Presentation evaluation modal */}
+        <PresentationModal
+          participant={presentationTarget === "B" ? projectB : projectA}
+          isOpen={presentationTarget !== null}
+          onClose={() => setPresentationTarget(null)}
+        />
 
         {/* Chat panels */}
         <div className="flex-1 min-h-0 mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">

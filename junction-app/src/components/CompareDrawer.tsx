@@ -21,13 +21,15 @@ PROJECT A:
 - Name: ${a.projectName}
 - Team: ${a.teamName} (${a.teamMembers.join(", ")})
 - Description: ${a.description}
-- Demo: ${a.demoUrl}
+- Demo: ${a.demoUrl}${a.presentationUrl ? `\n- Presentation: ${a.presentationUrl}` : ""}
 
 PROJECT B:
 - Name: ${b.projectName}
 - Team: ${b.teamName} (${b.teamMembers.join(", ")})
 - Description: ${b.description}
-- Demo: ${b.demoUrl}
+- Demo: ${b.demoUrl}${b.presentationUrl ? `\n- Presentation: ${b.presentationUrl}` : ""}
+
+${a.presentationUrl || b.presentationUrl ? "IMPORTANT: For any project that has a Presentation URL, visit that URL, read the PDF content, and use it as primary context for your comparison.\n" : ""}
 
 JUDGING CRITERIA (Project Guidelines):
 ${organizerRulebook.content}

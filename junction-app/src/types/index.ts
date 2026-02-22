@@ -6,6 +6,7 @@ export interface Participant {
   teamMembers: string[];
   score: number | null;
   demoUrl: string;
+  presentationUrl?: string;
   seed?: boolean;
 }
 
